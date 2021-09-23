@@ -127,14 +127,14 @@ The runbook that you've created is still in Draft mode. You must publish it befo
 1. Select **Publish** to publish the runbook and then **Yes** when prompted.
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Publish-Runbook.png)
     
-### Create a new schedule in the Azure portal
+## Create a new schedule in the Azure portal
 
 1. From your Automation account, on the left-hand pane select **Schedules** under **Shared Resources**.
 2. On the **Schedules** page, select **Add a schedule**.
 3. On the **New schedule** page, enter a name and optionally enter a description for the new schedule.
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Schedule.png)
     
-### Link a schedule to a runbook with the Azure portal
+## Link a schedule to a runbook with the Azure portal
 
 1. In the Azure portal, from your automation account, select **Runbooks** under **Process Automation** and select the `ADBRunbook-BusinessHours`
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Link-Schedule-select.png)
@@ -142,3 +142,9 @@ The runbook that you've created is still in Draft mode. You must publish it befo
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Link-Schedule-selectOne.png)
 1. select previous created schedule named `ADB-BusinessHours`.
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Link-Schedule-selecttwo.png)
+    
+> [!Note]
+> Make sure all the changes are published.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Runbook-Published.png)
+ 
+ 
