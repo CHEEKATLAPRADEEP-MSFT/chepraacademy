@@ -29,5 +29,11 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Test PowerShell module working on the local machine. 
 
+You need to get the PowerShell module to test the PowerShell script working on the local machine.
+
+**Step1:** Open Windows PowerShell as Run as Administrator.
+
+
+
 
 
