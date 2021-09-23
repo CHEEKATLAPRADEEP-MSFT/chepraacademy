@@ -155,7 +155,8 @@ Note: If your Bussiness Hours (8AM to 6PM which means 10 Hours x 60 minutes) you
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/ADB-Terminate.png)
 
     
- ### If you have any questions while following the article, please do create a new issue on this repro.
+ ## Any Questions?
+ If you have any questions while following the article, please do create a new issue on this repro.
       ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Open-Issues.png)
  
  
