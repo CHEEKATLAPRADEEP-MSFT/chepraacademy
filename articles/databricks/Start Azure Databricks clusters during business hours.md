@@ -150,8 +150,8 @@ The runbook that you've created is still in Draft mode. You must publish it befo
  As per the manual start we are successfully started Azure Databricks clusters during business hours.
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Job-completed.png)
     
-Note: If your Bussiness Hours (8AM to 6PM which means 10 Hours x 60 minutes) you can set the property Terminate after `600` minutes of inactivity/
-
+Note: If your Bussiness Hours (8AM to 6PM which means 10 Hours x 60 minutes) you can set the property Terminate after `600` minutes of inactivity as shown below:
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/ADB-Terminate.png)
 
     
  
