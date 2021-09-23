@@ -16,6 +16,7 @@ In this tutorial, you learn how to:
 
 > * Test PowerShell module working on the local machine. 
 > * Create Azure Automation account.
+> * Import modules to Azure Automation account
 > * Create a PowerShell runbook
 > * Test and publish the runbook
 > * Run and track the status of the runbook job
@@ -154,6 +155,7 @@ Note: If your Bussiness Hours (8AM to 6PM which means 10 Hours x 60 minutes) you
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/ADB-Terminate.png)
 
     
- 
+ ### If you have any questions while following the article, please do create a new issue on this repro.
+      ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Open-Issues.png)
  
  
