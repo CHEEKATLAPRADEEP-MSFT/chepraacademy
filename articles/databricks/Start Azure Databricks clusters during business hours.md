@@ -16,7 +16,7 @@ In this tutorial, you learn how to:
 
 > * Test PowerShell module working on the local machine. 
 > * Create Azure Automation account.
-> * Create a PowerShell Workflow runbook
+> * Create a PowerShell runbook
 > * Test and publish the runbook
 > * Run and track the status of the runbook job
 
@@ -73,5 +73,56 @@ Start-DatabricksCluster -ClusterID "<Cluster_ID>"
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Create-Automation-Account-Details.png)
 1. Select **Create** to start the Automation account deployment. The creation completes in about a minute.
 
+## Import modules to Azure Automation account
 
+Before create a new runbook, as you rememeber we had installed `DatabricksPS` module on the local machine. So, lets add a module in Azure Automation account.
 
+1. From your open Automation account page, under **Shared Resources**, select **Modules** and click on **Browse gallery**
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Automation-Modules.png)
+
+1. Search **DatabricksPS**.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Automation-Modules-Browse.png)
+1. Select **DatabricksPS** and click on **Import** and click ok.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Automation-Modules-Browse-Import.png)
+1. Wait untill `DatabricksPS` module is imported succesfully where status is available. 
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Automation-Modules-Available.png)
+
+## Create new runbook
+One advantage of Windows PowerShell Workflows is the ability to perform a set of commands in parallel instead of sequentially as with a typical script
+
+1. From your open Automation account page, under **Process Automation**, select **Runbooks** and Select **+ Create a runbook**.
+    1. Name the runbook `ADBRunbook-BusinessHours`.
+    1. From the **Runbook type** drop-down menu, select **PowerShell**.
+    1. Select **Create**.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Create-Runbook.png)
+
+## Add code to the runbook
+
+You can either type code directly into the runbook, or you can select cmdlets which we created on the local machine, runbooks, and assets from the Library control and add them to the runbook with any related parameters. For this tutorial, you type code directly into the runbook.
+
+```powershell
+$accessToken = "<Personal_Access_Token>"
+$apiUrl = "<Azure_Databricks_Endpoint_URL>"
+Set-DatabricksEnvironment -AccessToken $accessToken -ApiRootUrl $apiUrl
+Start-DatabricksCluster -ClusterID "<Cluster_ID>"
+```
+1. From your open Automation account page, under **Process Automation**, select **Runbooks** and Select **ADBRunbook-BusinessHours** runbook and click on **Edit** and paste the above code and save the runbook by selecting **Save**.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Code-to-Runbook.png)
+    
+## Test the runbook
+
+Before you publish the runbook to make it available in production, you should test it to make sure that it works properly. Testing a runbook runs its Draft version and allows you to view its output interactively.
+
+1. Select **Test pane** to open the **Test** page, delect **Start** to start the test.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Test-Runbook.png)
+
+> [!Note]
+>  Here you can check whether the Azure Databricks cluster is starting.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/ADB-Starting.png)    
+ 
+## Publish and start the runbook
+
+The runbook that you've created is still in Draft mode. You must publish it before you can run it in production. When you publish a runbook, you overwrite the existing Published version with the Draft version. In this case, you don't have a Published version yet because you just created the runbook.
+
+1. Select **Publish** to publish the runbook and then **Yes** when prompted.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Publish-Runbook.png)
