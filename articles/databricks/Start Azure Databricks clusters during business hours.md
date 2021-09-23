@@ -33,14 +33,14 @@ You need to get the PowerShell module to test the PowerShell script working on t
 
 **Step1:** Open Windows PowerShell as Run as Administrator.
 
-![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Windows-PowerShell-RunAsAdmin.png)
+  ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Windows-PowerShell-RunAsAdmin.png)
 
 **Step2:** Copy and Paste the following command to install this package using PowerShellGet.
 
 ```powershell
 Install-Module -Name DatabricksPS
 ```
-![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Install-Module.png)
+  ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Install-Module.png)
 
 **Step3:** Get details of the Azure Databricks clusters which you want to start.
 To get Azure Databricks clusters details, you need to have Azure Databricks Endpoint URL and Personal Access Token.
@@ -51,7 +51,7 @@ $apiUrl = "<Azure_Databricks_Endpoint_URL>"
 Set-DatabricksEnvironment -AccessToken $accessToken -ApiRootUrl $apiUrl
 Get-DatabricksCluster
 ```
-![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Get-ClusterDetails.png)
+  ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Get-ClusterDetails.png)
 
 **Step4:** Get the cluster ID which is displayed in the step3 and create a PowerShell script as shown below.
 
@@ -61,8 +61,17 @@ $apiUrl = "<Azure_Databricks_Endpoint_URL>"
 Set-DatabricksEnvironment -AccessToken $accessToken -ApiRootUrl $apiUrl
 Start-DatabricksCluster -ClusterID "<Cluster_ID>"
 ```
+## Create Azure Automation account.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
+1. From the top menu, select **+ Create a resource**.
 
+1. Under Categories**, select **IT & Management Tools**, and then select **Automation**.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Create-Automation-Account.png)
+1. From the **Add Automation Account** page, provide the following information:
+
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Create-Automation-Account-Details.png)
+1. Select **Create** to start the Automation account deployment. The creation completes in about a minute.
 
 
 
