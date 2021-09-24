@@ -1,16 +1,16 @@
 ---
 title: Tutorial - Start Azure Databricks clusters during business hours
-description: This tutorial teaches you to create, test, and publish a PowerShell Workflow runbook to start Azure Databricks clusters during business hours.
+description: This tutorial teaches you to create, test, and publish a PowerShell runbook to start Azure Databricks clusters during business hours.
 services: databricks
 ms.subservice: process-automation
 ms.date: 09/23/2021
 ms.topic: tutorial 
-#Customer intent: As a developer, I want use workflow runbooks so that I can automate the starting of VMs.
+#Customer intent: As a developer, I want use PowerShell runbooks so that I can automate the starting of VMs.
 ---
 
 # Tutorial: Start Azure Databricks clusters during business hours
 
-This tutorial walks you through the creation of a PowerShell Workflow runbook to start Azure Databricks clusters during business hours in Azure Automation.
+This tutorial walks you through the creation of a PowerShell runbook to start Azure Databricks clusters during business hours in Azure Automation.
 
 In this tutorial, you learn how to:
 
@@ -89,7 +89,7 @@ Before create a new runbook, as you rememeber we had installed `DatabricksPS` mo
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Automation-Modules-Available.png)
 
 ## Create new runbook
-One advantage of Windows PowerShell Workflows is the ability to perform a set of commands in parallel instead of sequentially as with a typical script
+One advantage of Windows PowerShell is the ability to perform a set of commands in parallel instead of sequentially as with a typical script
 
 1. From your open Automation account page, under **Process Automation**, select **Runbooks** and Select **+ Create a runbook**.
     1. Name the runbook `ADBRunbook-BusinessHours`.
