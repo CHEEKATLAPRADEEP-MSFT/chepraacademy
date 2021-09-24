@@ -161,7 +161,7 @@ As we have schedule to run everyday at 8 AM, it has succusfully ran the job at 8
 You can also check out the next run time to confirm if it works based on the recurring schedule.
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Job-NextRun.png)
 
-Note: If your Bussiness Hours (8AM to 6PM which means 10 Hours x 60 minutes) you can set the property Terminate after `600` minutes of inactivity as shown below:
+Note: If your Business Hours (8AM to 6PM which means 10 Hours x 60 minutes) you can set the property Terminate after `600` minutes of inactivity as shown below:
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/ADB-Terminate.png)
 
     
