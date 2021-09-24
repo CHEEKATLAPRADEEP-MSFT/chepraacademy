@@ -148,9 +148,16 @@ Using schedule option you can create a start time of the Azure Databricks cluste
 > Make sure all the changes are published.
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Runbook-Published.png)
  
- As per the manual start we are successfully started Azure Databricks clusters during business hours.
+## Manual test: 
+As per the manual start we are successfully started Azure Databricks clusters during business hours.
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Job-completed.png)
-    
+
+## As per the business hours schedule:
+As we have schedule to run everyday at 8 AM, it has succusfully ran the job at 8 AM.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Job-8AM.png)
+You can also check out the next run time to confirm if it works based on the recurring schedule.
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Job-NextRun.png)
+
 Note: If your Bussiness Hours (8AM to 6PM which means 10 Hours x 60 minutes) you can set the property Terminate after `600` minutes of inactivity as shown below:
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/ADB-Terminate.png)
 
@@ -158,5 +165,4 @@ Note: If your Bussiness Hours (8AM to 6PM which means 10 Hours x 60 minutes) you
  ## Any Questions?
  If you have any questions while following the article, please do create a new issue on this repro.
       ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Open-Issues.png)
- 
  
