@@ -135,6 +135,9 @@ Using schedule option you can create a start time of the Azure Databricks cluste
 3. On the **New schedule** page, enter a name and optionally enter a description for the new schedule.
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Schedule.png)
     
+Example for business hours on weekdays:
+    ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Schedule-Weekdays.png)
+    
 ## Link a schedule to a runbook with the Azure portal
 
 1. In the Azure portal, from your automation account, select **Runbooks** under **Process Automation** and select the `ADBRunbook-BusinessHours`
