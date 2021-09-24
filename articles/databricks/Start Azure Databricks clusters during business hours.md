@@ -129,7 +129,7 @@ The runbook that you've created is still in Draft mode. You must publish it befo
     ![image](https://github.com/CHEEKATLAPRADEEP-MSFT/chepraacademy/blob/main/articles/databricks/Media/Publish-Runbook.png)
     
 ## Create a new schedule in the Azure portal
-
+Using schedule option you can create a start time of the Azure Databricks clusters based on the your bussiness hours. Here in the below example I had created a recurring schedule to start everyday at 8 AM.
 1. From your Automation account, on the left-hand pane select **Schedules** under **Shared Resources**.
 2. On the **Schedules** page, select **Add a schedule**.
 3. On the **New schedule** page, enter a name and optionally enter a description for the new schedule.
